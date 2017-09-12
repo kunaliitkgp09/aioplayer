@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="50dp">
+<ImageView
+    android:layout_width="50dp"
+    android:id="@+id/albumart"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_height="50dp" />
+<LinearLayout
+    android:layout_width="130dp"
+    android:orientation="vertical"
+    android:layout_gravity="center_vertical"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="10dp"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/title"
+        android:text="title"
+        android:textStyle="bold"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/subtitle"
+        android:text="subtitle"
+        android:ellipsize="end"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:background="@android:color/transparent"
+        android:scaleType="fitXY"
+        android:clickable="true"
+        android:focusable="true"
+        android:id="@+id/backicon"
+        android:layout_height="30dp" />
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:focusable="true"
+        android:id="@+id/pauseplay"
+        android:layout_height="40dp" />
+    <ImageButton
+        android:layout_width="30dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:scaleType="fitXY"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="10dp"
+        android:focusable="true"
+        android:id="@+id/nexticon"
+        android:focusableInTouchMode="true"
+        android:layout_height="30dp" />
+</LinearLayout>

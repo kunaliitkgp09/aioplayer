@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.aioplayer">
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="AIOplayer"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:screenOrientation="portrait"
+        android:name="com.aioplayer.application.SongApplication"
+        tools:replace="label,theme"
+        android:theme="@style/AppTheme" >
+
+        <activity android:name="com.aioplayer.MainActivity"
+            android:configChanges="orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.aioplayer.service.AudioMusicService"></service>
+        <service android:name="com.aioplayer.service.MediaCastService" />
+        <service android:name="com.aioplayer.service.FileDownloadService" />
+
+    </application>
+
+
+
+</manifest>

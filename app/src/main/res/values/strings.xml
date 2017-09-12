@@ -1,0 +1,11 @@
+<resources>
+    <string-array name="itemdrawer">
+        <item>Audio</item>
+        <item>Video</item>
+        <item>Photo</item>
+        <item>PlayList</item>
+
+    </string-array>
+    <string name="opendrawer">Open Drawer</string>
+    <string name="closedrawer">Close Drawer</string>
+</resources>

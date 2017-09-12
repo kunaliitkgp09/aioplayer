@@ -1,0 +1,111 @@
+<RelativeLayout
+	android:layout_height="match_parent"
+	android:layout_width="match_parent"
+	android:layout_marginTop="100dp"
+	android:animateLayoutChanges="true"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+	android:id="@+id/actionbarrelative"
+ >
+
+	<FrameLayout
+		android:id="@+id/mainlayout"
+		android:layout_width="match_parent"
+		android:background="@android:color/darker_gray"
+		android:layout_height="match_parent" />
+
+
+
+
+	<!-- The navigation drawer -->
+
+
+
+</RelativeLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:orientation="horizontal"
+		android:id="@+id/playercontroller"
+		android:layout_alignParentBottom="true"
+		android:background="@android:color/white"
+		android:gravity="center"
+		android:visibility="gone"
+		android:layout_gravity="center"
+		android:layout_height="70dp">
+		<ImageView
+			android:layout_width="wrap_content"
+			android:id="@+id/previousicon"
+			android:layout_marginLeft="20dp"
+			android:layout_height="20dp" />
+		<ImageView
+			android:layout_width="wrap_content"
+			android:layout_marginLeft="20dp"
+			android:id="@+id/rewindicon"
+			android:layout_height="20dp" />
+		<ToggleButton
+			android:id="@+id/toggleplaypause"
+			android:layout_width="30dp"
+			android:layout_height="30dp"
+			android:layout_marginLeft="20dp"
+			android:textOn=""
+			android:textOff=""
+			android:focusable="false"
+			android:focusableInTouchMode="false"
+			android:layout_centerVertical="true"/>
+
+		<ImageView
+			android:layout_width="wrap_content"
+			android:id="@+id/fastforwardicon"
+			android:layout_marginLeft="20dp"
+			android:layout_height="20dp" />
+		<ImageView
+			android:layout_width="wrap_content"
+			android:id="@+id/onnext"
+			android:layout_marginLeft="20dp"
+			android:layout_height="20dp" />
+		<ImageView
+			android:layout_width="wrap_content"
+			android:id="@+id/onreplay"
+			android:layout_marginLeft="20dp"
+			android:layout_height="30dp" />
+	</LinearLayout>
+	<SeekBar
+		android:layout_width="match_parent"
+		android:layout_above="@id/playercontroller"
+		android:id="@+id/seekbar"
+		android:visibility="gone"
+		android:background="@android:color/white"
+		android:layout_height="20dp"></SeekBar>
+	<TextView
+		android:layout_width="wrap_content"
+		android:id="@+id/currenttime"
+		android:layout_below="@id/seekbar"
+		android:textColor="@android:color/black"
+		android:layout_marginLeft="10dp"
+		android:layout_alignParentLeft="true"
+		android:layout_height="wrap_content" />
+	<TextView
+		android:layout_width="wrap_content"
+		android:id="@+id/maxtime"
+		android:layout_below="@id/seekbar"
+		android:layout_alignParentRight="true"
+		android:layout_marginRight="10dp"
+		android:textColor="@android:color/black"
+		android:layout_height="wrap_content" />
+
+	<ProgressBar
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:visibility="gone"
+		android:layout_centerInParent="true"
+		android:id="@+id/progressBar"/>
+
+</RelativeLayout>
+
+
+

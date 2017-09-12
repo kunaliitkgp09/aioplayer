@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ListView android:layout_width="match_parent"
+    android:id="@+id/videosongs"
+    android:divider="#DCDCDC"
+    android:dividerHeight="10dp"
+    android:layout_height="match_parent"
+    android:layout_marginTop="60dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+    <com.mancj.materialsearchbar.MaterialSearchBar
+        app:mt_speechMode="true"
+        app:mt_hint="video name"
+        app:mt_maxSuggestionsCount="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/floating_search_view" />
+</RelativeLayout>
